@@ -1,4 +1,16 @@
 <template>
-  <h1>Hey!</h1>
-  <p>Amet tempora nemo eveniet voluptatem numquam ipsum Adipisci sint hic magnam quisquam necessitatibus. Eos deserunt aliquam ad fugiat accusantium Excepturi rem aut distinctio laudantium natus? Distinctio eum dolor fugit laborum explicabo? Dolorem sapiente sapiente aspernatur dicta adipisci Maiores necessitatibus ea molestiae libero est. Recusandae obcaecati aperiam culpa aperiam numquam aliquid</p>
+  <section class="bio">
+    <h1>Hey!</h1>
+    <p>
+      I am P.E. Butler III and I have been drawing since as long as I can remember.
+    </p>
+  </section>
 </template>
+
+<style>
+.bio {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+</style>

@@ -1,13 +1,24 @@
 <template>
   <nav>
     <ul>
-      <li><a href="#">Contact</a></li>
+      <li>
+        <button @click="$emit('toggleFlyout')">
+          Contact
+        </button>
+      </li>
     </ul>
   </nav>
 </template>
 
+<script setup>
+defineEmits([
+  'toggleFlyout'
+])
+</script>
+
 <style>
 ul {
+  display: flex;
   background-color: black;
   list-style: none;
   margin: 0;
@@ -15,19 +26,13 @@ ul {
 }
 
 li {
-  display: flex;
+  margin-left: auto;
+  padding: 0.5rem 0;
 }
 
-li a {
-  color: white;
-  font-weight: bold;
-  padding: 2rem 2rem;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-
-li a:hover {
-  background-color: pink;
-  color: black;
+button {
+  background-color: white;
+  border: none;
+  padding: 1rem 2rem;
 }
 </style>
