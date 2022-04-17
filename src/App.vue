@@ -1,7 +1,7 @@
 <template>
   <div class="overlay" v-if="flyout.isOpen" />
   <Navigation @toggle-flyout="toggleFlyout" />
-  <Flyout :isOpen="flyout.isOpen" v-if="flyout.isOpen" @close="toggleFlyout"/>
+  <Flyout :isOpen="flyout.isOpen" v-if="flyout.isOpen" @close="toggleFlyout" />
   <main>
     <Bio />
     <Gallery />
@@ -16,15 +16,15 @@ import Navigation from './components/Navigation.vue';
 import Flyout from './components/Flyout.vue';
 
 const flyout = reactive({
-  isOpen: false 
+  isOpen: false
 });
 
 const toggleFlyout = () => flyout.isOpen = !flyout.isOpen;
-
 </script>
 
 <style>
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -51,7 +51,7 @@ body {
 }
 
 main {
-  background: url('../public/doodle.jpeg') no-repeat center;
+  background: url('/doodle.jpeg') no-repeat center;
   background-size: cover;
   display: flex;
   min-height: 100vh;
@@ -59,7 +59,9 @@ main {
   gap: 10px;
 }
 
-h1, h2, p {
+h1,
+h2,
+p {
   background-color: black;
   color: white;
   padding: 1rem 0.5rem;

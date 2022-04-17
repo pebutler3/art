@@ -1,5 +1,5 @@
 <template>
-  <form>
+  <form name="contact" netlify>
     <label for="firstName">
       First Name:
       <input type="text" id="firstName" required>
@@ -40,7 +40,8 @@ label {
   width: 100%;
 }
 
-input, textarea {
+input,
+textarea {
   border: none;
   font-size: 1rem;
   font-weight: bold;
